@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mi Recibida · Farmacia Hospitalaria</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes elegantes de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="effects-container"></div>
+  
+  <header class="editorial-hero">
+    <div class="hero-overlay">
+      <p class="hero-date fade-up">17 de Noviembre, 2026</p>
+      <h1 class="fade-up delay-1">El Gran<br>Día</h1>
+      <h2 class="fade-up delay-2">Técnica en Farmacia Hospitalaria</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="countdown-wrapper reveal">
+      <p class="subtitle">LA CUENTA REGRESIVA</p>
+      <div class="minimal-count">
+        <div class="time-box"><span id="days">--</span><label>Días</label></div>
+        <div class="separator">:</div>
+        <div class="time-box"><span id="hours">--</span><label>Horas</label></div>
+        <div class="separator">:</div>
+        <div class="time-box"><span id="minutes">--</span><label>Minutos</label></div>
+        <div class="separator">:</div>
+        <div class="time-box"><span id="seconds">--</span><label>Segundos</label></div>
+      </div>
+      <div id="finished-msg" class="hidden">
+        <h3>¡Llegó el momento!</h3>
+        <p>Oficialmente Técnica en Farmacia Hospitalaria</p>
+      </div>
+    </section>
+
+    <section class="story-timeline">
+      <p class="subtitle reveal">MI RECORRIDO</p>
+      <h3 class="section-title reveal">De un sueño a la realidad</h3>
+      
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-photo"><img src="imagen1.jpg" alt="Inicio"></div>
+          <div class="timeline-text">
+            <h4>01. El Comienzo</h4>
+            <p>Entre nervios y grandes expectativas, empezó este camino lleno de desafíos y aprendizajes.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reverse reveal">
+          <div class="timeline-photo"><img src="imagen2.jpg" alt="Vocación"></div>
+          <div class="timeline-text">
+            <h4>02. La Vocación</h4>
+            <p>Horas de estudio, prácticas y la firme convicción de querer aportar al cuidado de los demás.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-photo"><img src="imagen3.jpg" alt="La Meta"></div>
+          <div class="timeline-text">
+            <h4>03. La Gran Meta</h4>
+            <p>Hoy estoy a un paso de llevar todo mi esfuerzo, vocación y el título al hospital.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="event-details">
+      <div class="details-grid">
+        <div class="detail-box reveal">
+          <span class="icon">📍</span>
+          <h4>Ubicación</h4>
+          <p>Universidad Nacional Arturo Jauretche<br><small>Ingreso por Av. Calchaquí</small></p>
+          <a class="btn-outline" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Universidad+Nacional+Arturo+Jauretche">Ver Mapa</a>
+        </div>
+        <div class="detail-box reveal">
+          <span class="icon">🕓</span>
+          <h4>Horario</h4>
+          <p>17 de Noviembre de 2026<br><small>A partir de las 16:00 hs</small></p>
+        </div>
+        <div class="detail-box reveal highlight-box">
+          <span class="icon">⚠️</span>
+          <h4>Festejo Responsable</h4>
+          <p>Por favor, no tirar comida. Podes traer:</p>
+          <p class="tags"><span>Serpentinas</span><span>Papelitos</span><span>Espuma</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="interactive-section reveal">
+      <h3 class="section-title">Acompañame</h3>
+      <div class="action-buttons">
+        <button id="confettiBtn">Lanzar Confeti</button>
+        <button id="sparkleBtn">Lluvia de Brillo</button>
+        <button id="heartBtn">Corazones</button>
+      </div>
+      
+      <div class="audio-player">
+        <div class="track-info">
+          <span class="icon">🎵</span>
+          <div>
+            <h4>Música para el recuerdo</h4>
+            <p>Dale play mientras esperamos</p>
+          </div>
+        </div>
+        <button id="musicBtn" class="btn-play">▶ Play</button>
+        <audio id="audio" src="musica.mp3" loop></audio>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SimbaXena</p>
+    <small>17 · 11 · 2026</small>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
