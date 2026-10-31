@@ -1,4 +1,4 @@
-const targetDate = new Date("2026-11-17T16:00:00-03:00").getTime();
+const targetDate = new Date("2026-11-17T17:00:00-03:00").getTime();
 const $ = id => document.getElementById(id);
 let isFinished = false;
 
